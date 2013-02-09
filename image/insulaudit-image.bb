@@ -8,10 +8,11 @@ PR = "r0"
 
 # Add to known working systemd-image from meta-angstrom
 require recipes-images/angstrom/systemd-image.bb
+# eventually we'll change that a little bit
 
 # We want some extras
-
 IMAGE_INSTALL += "socat usb-modeswitch kernel-module-hso \
-		kernel-module-usbserial kernel-modules"
+		kernel-module-usbserial kernel-modules \
+		ppp python vim screen git"
 
 export IMAGE_BASENAME = "insulaudit-image"
