@@ -16,7 +16,7 @@ FILES_${PN} = "${libdir}/python2.7"
 
 do_install () {
  install -d ${D}${libdir}/python2.7/pymodem
- echo "cp -r ${S}/pymodem pymodem ${D}${libdir}/python2.7/pymodem"
- cp -r ${S}/pymodem ${D}${libdir}/python2.7/pymodem
+ echo "cp -r ${S}/pymodem/ ${D}${libdir}/python2.7/"
+ cp -r ${S}/pymodem ${D}${libdir}/python2.7/
 }
 
