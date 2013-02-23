@@ -2,10 +2,10 @@ DESCRIPTION = "Firmware for medical device (esp. insulin pumps/BGM) auditing"
 LICENSE = "GPLv3"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=73f1eb20517c55bf9493b7dd6e480788"
 
-SRCREV = "21cf37fc7d19bbfcddf502e9b529ddfa1c3b069b"
+SRCREV = "c57a70f2fbd3898a826f1e0fe01c445dbb7a6242"
 SRC_URI = "git://github.com/n-west/insulware.git"
 
-RDEPENDS += "pymodem"
+RDEPENDS += "cmgpy"
 
 S = "${WORKDIR}/git"
 
