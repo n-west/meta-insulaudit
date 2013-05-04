@@ -12,8 +12,9 @@ require recipes-images/angstrom/systemd-image.bb
 
 # We want some extras
 IMAGE_INSTALL += "socat usb-modeswitch kernel-module-hso \
+        ppp curl ntpdate \
 		kernel-module-usbserial kernel-modules \
-		ppp python vim screen git awk python-re python-subprocess\
+		python vim screen git python-re python-subprocess python-pyserial\
 		cmgpy insulware "
 
 export IMAGE_BASENAME = "insulaudit-image"
