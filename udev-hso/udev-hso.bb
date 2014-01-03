@@ -16,4 +16,4 @@ do_install () {
   DESTDIR=${D} oe_runmake install
 }
 
-FILES_udev-hso = "${datadir}/usr/*"
+FILES_${PN} += "${datadir}/usr/*"
