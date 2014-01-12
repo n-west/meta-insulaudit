@@ -1,10 +1,15 @@
 
+FILESEXTRAPATHS_prepend := "${THISDIR}/base-files:"
 FILESEXTRAPATHS := "${THISDIR}/${PN}"
 
-PRINC := "${@int(PRINC) + 1}"
+PRINC := "${@int(PRINC) + 0}"
 
 
-# need custom files:
-# 1. /etc/network/interfaces
-# 2. /etc/dnsmasq.conf
-# 3. 
+SRC_URI = "\
+            file://interfaces \
+          "
+
+do_install_append_medevice() {
+    install -d -m 755 ${D}${sysconfdir}
+    install -m 0644 ${WORKDIR}/interfaces ${D}${sysconfdir}/network/interfaces
+}
