@@ -1,11 +1,10 @@
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/base-files:"
-FILESEXTRAPATHS := "${THISDIR}/${PN}"
 
 PRINC := "${@int(PRINC) + 0}"
 
 
-SRC_URI = "\
+SRC_URI += "\
             file://interfaces \
           "
 

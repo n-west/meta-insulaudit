@@ -18,7 +18,6 @@ IMAGE_FEATURES = "ssh-server-openssh \
                 "
 # core package groups
 IMAGE_INSTALL = "packagegroup-core-boot \
-                packagegroup-base-usbhost \
                 packagegroup-base-usbgadget \
                 packagegroup-core-ssh-openssh \
                 ${ROOTFS_PKGMANAGE_BOOTSTRAP} \
